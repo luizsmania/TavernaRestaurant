@@ -3,4 +3,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Welcome to the restaurant page!")
+    return render(request, 'index.html')
+
+
+def menu(request):
+    return render(request, 'menu.html')
